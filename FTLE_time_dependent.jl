@@ -1,5 +1,8 @@
 using SpeedyWeather, TravellingSailorProblem, GLMakie, LinearAlgebra, NCDatasets
 
+### TODO THIS VERSION DOES NOT WORK
+
+
 ### Constants and parameters ###
 
 ntrunc = 40 # Spectral grid truncation level
