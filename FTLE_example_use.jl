@@ -2,6 +2,10 @@ using SpeedyWeather, TravellingSailorProblem, GLMakie, LinearAlgebra, NCDatasets
 
 include("FTLE_functions.jl")
 
+"""
+Example use of FTLE_functions, where a simulation is run with four perturbed
+particles per grid cell, and plot the FTLE from the final positions
+"""
 
 
 ### Constants and parameters ###

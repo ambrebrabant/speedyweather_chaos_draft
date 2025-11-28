@@ -54,9 +54,10 @@ function perturb_positions_FTLE(particles, londs, latds, dist_km)
     particles[4:4:end] .= [Particle(londs[i], latds[i] - del_lat) for i in 1:Npoints]
 end
 
-function displacement_gradient_matrix(plonds, platds, dist_km)
+function displacement_gradient_matrix_central(plonds, platds, dist_km)
     """
     Compute the displacement gradient matrix given particle positions at a fixed time
+    Uses a central difference scheme to do this, with four points per grid cell
 
     Inputs:
         plonds: longitudes of particles
